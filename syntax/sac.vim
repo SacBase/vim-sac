@@ -160,7 +160,7 @@ syn region      saccPreProc         start="^\s*\zs\(%:\|#\)\s*\(pragma\>\|line\>
 
 " Type-related definitions
 syn keyword     sacStructure        typedef classtype class
-syn keyword     sacStorageClass     external inline
+syn keyword     sacStorageClass     external inline noinline
 
 " SaC types
 syn keyword     sacType             float bool unsigned byte short int
