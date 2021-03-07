@@ -156,7 +156,7 @@ syn match       sacInclude          display "^\s*\(%:\|#\)\s*include\>\s*["<]" c
 
 syn cluster     sacPreProcGroup     contains=sacPreCondit,sacIncluded,sacInclude,sacDefine,sacErrInParen,sacErrInBracket,sacSpecial,sacOctalZero,sacCppOutWrapper,sacCppInWrapper,@sacCppOutInGroup,sacFormat,sacNumber,sacFloat,sacOctal,sacOctalError,sacNumbersCom,sacString,sacCommentSkip,sacCommentString,sacComment2String,@sacCommentGroup,sacCommentStartError,sacParen,sacBracket,sacBadBlock
 syn region      sacDefine           start="^\s*\zs\(%:\|#\)\s*\(define\|undef\)\>" skip="\\$" end="$" keepend contains=ALLBUT,@sacPreProcGroup,@Spell
-syn region      saccPreProc         start="^\s*\zs\(%:\|#\)\s*\(pragma\>\|line\>\|warning\>\|warn\>\|error\>\)" skip="\\$" end="$" keepend contains=ALLBUT,@sacPreProcGroup,@Spell
+syn region      sacPreProc          start="^\s*\zs\(%:\|#\)\s*\(pragma\>\|line\>\|warning\>\|warn\>\|error\>\)" skip="\\$" end="$" keepend contains=ALLBUT,@sacPreProcGroup,@Spell
 
 " Type-related definitions
 syn keyword     sacStructure        typedef classtype class
